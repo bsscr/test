@@ -21,4 +21,4 @@ spring:
 endpoints:
   health:
 sensitive: false
-foo: test
+foo: user-service-test

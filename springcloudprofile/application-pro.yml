@@ -21,3 +21,4 @@ spring:
 endpoints:
   health:
 sensitive: false
+foo: pro

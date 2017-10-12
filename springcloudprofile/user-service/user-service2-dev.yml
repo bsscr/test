@@ -21,4 +21,4 @@ spring:
 endpoints:
   health:
 sensitive: false
-foo: pro
+foo: user-service2-dev

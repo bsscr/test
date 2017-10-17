@@ -7,7 +7,9 @@ eureka:
 spring:
   boot:
     admin:
-      url: http://localhost:9021  
+      url: http://localhost:9021
+  zipkin:
+    base-url: http://localhost:9031 # zipkin server 地址
 management:
   security:
     enabled: true

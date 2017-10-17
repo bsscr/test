@@ -5,6 +5,8 @@ spring:
     loadbalancer: true
       retry:
         enabled: true # 允许负载均衡重试
+  zipkin:
+    base-url: http://localhost:9031 # zipkin server 地址
 hystrix:
   command:
     default:

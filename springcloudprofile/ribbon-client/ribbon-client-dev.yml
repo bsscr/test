@@ -1,0 +1,21 @@
+server:
+  port: 9104
+spring:
+  cloud:
+    loadbalancer: true
+      retry:
+        enabled: true # 允许负载均衡重试
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliSeconds: # 断路器超时时间,只有断路器超时时间大于ribbon超时时间，才会激活重试
+ribbon-client:
+  ribbon:
+    connectTimeout: # ribbon连接超时时间
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka #,http://peer2:9003/eureka

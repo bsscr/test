@@ -4,3 +4,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka
+spring:
+  cloud:
+    loadbalancer: true
+      retry:
+        enabled: true # 允许负载均衡重试

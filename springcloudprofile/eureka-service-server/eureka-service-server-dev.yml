@@ -8,3 +8,5 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false # 关闭保护中心，确保注册中心可以将不可用的实例正确剔除，主要用于本地调试

@@ -4,3 +4,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9001/eureka
+spring:
+  zipkin:
+    base-url: http://localhost:9031 # zipkin server 地址

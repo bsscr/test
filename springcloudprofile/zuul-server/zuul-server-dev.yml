@@ -1,0 +1,6 @@
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+    api-a:
+      url: http://localhost:8080/ # 所有符合/api-a/** 路径都会被转发到http://localhost:8080/

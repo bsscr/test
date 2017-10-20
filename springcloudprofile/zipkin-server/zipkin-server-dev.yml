@@ -9,3 +9,4 @@ spring:
     loadbalancer: true
       retry:
         enabled: true # 允许负载均衡重试
+from: 11
